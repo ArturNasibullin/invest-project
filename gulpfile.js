@@ -24,6 +24,7 @@ gulp.task('sass', function() { // Создаем таск Sass
 	return gulp.src('app/sass/**/*.sass') // Берем источник
 		.pipe(sass({outputStyle: 'nested'}).on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass :nested :compact :expanded :compressed
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8'], { cascade: true })) // Создаем префиксы
+		.pipe(rename('main.css'))
 		.pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
 		.pipe(browserSync.reload({stream: true})); // Обновляем CSS на странице при изменении
 });
