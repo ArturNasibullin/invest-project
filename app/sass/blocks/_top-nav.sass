@@ -1,0 +1,22 @@
+.top-nav
+	margin-top: 40px
+	padding: 15px
+	background-color: #fff
+	&__menu
+		a
+			margin-right: 45px
+			padding: 20px 0
+			font-weight: 700
+			text-transform: uppercase
+			color: $blackcolor
+			&::after
+				content: ""
+				width: 100%
+				height: 2px
+				background-color: $bluecolor
+				display: block
+				transform: translateY(38px) scale(0)
+				transition: all .2s
+			&:hover
+				&::after
+					transform: translateY(38px) scale(1)
