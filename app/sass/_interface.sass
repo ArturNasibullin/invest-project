@@ -8,6 +8,11 @@ a
 	color: $bluecolor
 h2
 	font-size: 24px
+	@include _768
+		text-align: center
+
+img
+	margin: auto
 .btn
 	display: inline-block
 	padding: 20px 30px
@@ -23,3 +28,5 @@ h2
 			background-color: lighten($bluecolor, 5%)
 .slick-active
 	outline: none
+ul
+	padding: 0

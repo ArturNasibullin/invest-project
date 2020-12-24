@@ -1,12 +1,36 @@
 .left-sidebar
 	margin-top: 40px
+	&__btn
+		display: none
+		width: 100%
+		margin: 20px 0
+		outline: none
+		position: relative
+		text-align: left
+		cursor: pointer
+		&::after
+			content: ""
+			display: inline-block
+			position: absolute
+			margin-top: -10px
+			top: 50%
+			right: 25px
+			width: 15px
+			height: 15px
+			border-bottom: 2px solid #fff
+			border-right: 2px solid #fff
+			transform: rotate(45deg)
+		@include _768
+			display: block
+
 	&__menu
 		background-color: #fff
+		transition: all .3s
 		li
 			display: block
 			line-height: 1.25
-			font-size: 16px
 			color: $blackcolor
+			@include fluidFontSize(14, 16, 350, 1280)
 			a
 				transition: all 0.2s
 				width: 100%
@@ -15,10 +39,23 @@
 				&:hover
 					background-color: $bluecolor
 					color: #fff
+		@include _768
+			transform-origin: top
+			transform: scaleY(0)
+			height: 0
+			li
+				a
+					padding: 10px 10px
+			&.active
+				transform: scaleY(1)
+				height: 100%
 	&__objects
 		margin-top: 30px
 		display: flex
 		flex-wrap: wrap
+		@include _768
+			display: none
+
 	&__item
 		width: 100%
 	&__decription

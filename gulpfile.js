@@ -14,8 +14,10 @@ var gulp      		= require('gulp'), // Подключаем Gulp
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
 		browserSync({ // Выполняем browser Sync
 			server: { // Определяем параметры сервера
-				baseDir: 'app' // Директория для сервера - app
+				baseDir: 'app', // Директория для сервера - app
+				directory: true // показывать список файлов
 			},
+			startPath: '/',
 			notify: false // Отключаем уведомления
 		});
 	});

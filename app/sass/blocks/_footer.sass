@@ -1,4 +1,5 @@
 .footer
+	margin-top: 60px
 	background-color: $blackcolor
 	color: $footer-color
 	padding-top: 60px
@@ -10,12 +11,18 @@
 		&-small
 			margin-top: 40px
 			font-size: 10px
+		@include _768
+			text-align: center
+			height: 200px
 	&__menu
 		li
 			display: block
 			margin-bottom: 15px
 			a
 				color: $footer-color
+		@include _768
+			height: 280px
+
 	&__contacts
 		text-align: right
 		&-phone
@@ -26,6 +33,8 @@
 				margin-bottom: 14px
 		&-email
 			color: $footer-color
+		@include _768
+			text-align: center
 	&__socials
 		text-align: right
 		margin-top: 20px
@@ -43,3 +52,6 @@
 				&:hover
 					background-color: rgba(#fff, 0.8)
 					color: $blackcolor
+		@include _768
+			text-align: center
+			a
