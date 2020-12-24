@@ -104,6 +104,9 @@ h2 {
 img {
   margin: auto; }
 
+.row-m-t {
+  margin-top: 40px; }
+
 .btn {
   display: inline-block;
   padding: 20px 30px;
@@ -197,7 +200,7 @@ ul {
     background-color: transparent;
     font-size: 30px;
     position: absolute;
-    top: -45px;
+    top: -55px;
     right: 15px;
     cursor: pointer;
     outline: none; }
@@ -391,6 +394,70 @@ ul {
     margin: 20px 0; }
   .team p {
     margin-bottom: 40px; }
+
+.structure__card {
+  padding: 15px;
+  margin-bottom: 30px;
+  min-height: 22rem;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+  .structure__card:hover {
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+            box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+    cursor: pointer; }
+
+.structure h3 {
+  color: #009adf;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 10px; }
+
+.structure__small {
+  color: #666666; }
+
+.contacts {
+  font-size: 16px; }
+  .contacts__tel img {
+    display: inline-block;
+    width: 20px;
+    margin-right: 12px;
+    vertical-align: middle; }
+  .contacts__email {
+    margin: 15px 0; }
+    .contacts__email img {
+      display: inline-block;
+      width: 20px;
+      margin-right: 12px;
+      vertical-align: middle; }
+  .contacts__adress {
+    color: #009adf; }
+  .contacts__btn {
+    width: 40%; }
+    @media only screen and (max-width: 768px) {
+      .contacts__btn {
+        width: 100%; } }
+  .contacts__socials li {
+    display: inline-block; }
+    .contacts__socials li a {
+      width: 42px;
+      height: 42px;
+      color: #fff;
+      background-color: #009adf;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 42px;
+      margin-left: 10px;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
+      .contacts__socials li a:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #131313; }
+  @media only screen and (max-width: 768px) {
+    .contacts__socials {
+      text-align: center; } }
 
 .footer {
   margin-top: 60px;

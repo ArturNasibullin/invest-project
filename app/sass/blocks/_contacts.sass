@@ -1,0 +1,40 @@
+.contacts
+	font-size: 16px
+	&__tel
+		img
+			display: inline-block
+			width: 20px
+			margin-right: 12px
+			vertical-align: middle
+	&__email
+		margin: 15px 0
+		img
+			display: inline-block
+			width: 20px
+			margin-right: 12px
+			vertical-align: middle
+	&__adress
+		color: $bluecolor
+	&__btn
+		width: 40%
+		@include _768
+			width: 100%
+
+	&__socials
+		li
+			display: inline-block
+			a
+				width: 42px
+				height: 42px
+				color: #fff
+				background-color: $bluecolor
+				border-radius: 50%
+				text-align: center
+				line-height: 42px
+				margin-left: 10px
+				transition: all 0.2s
+				&:hover
+					background-color: rgba(#fff, 0.8)
+					color: $blackcolor
+		@include _768
+			text-align: center
